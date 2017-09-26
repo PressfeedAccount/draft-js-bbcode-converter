@@ -387,6 +387,7 @@ function addStyleFromTagName (styleSet, tagName, elementStyles) {
         case 'code': {
             return styleSet.add(INLINE_STYLE.CODE);
         }
+        case 's':
         case 'del': {
             return styleSet.add(INLINE_STYLE.STRIKETHROUGH);
         }

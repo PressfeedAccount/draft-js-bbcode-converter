@@ -256,7 +256,7 @@ class MarkupGenerator {
                 let attrs = DATA_TO_ATTR.hasOwnProperty(entityType) ? DATA_TO_ATTR[entityType](entityType, entity) : null;
 
                 if (attrs.url) {
-                    return `[url="${attrs.url}"]${content}[/url]`;
+                    return `[url=${attrs.url}]${content}[/url]`;
                 } else {
                     return `[url]${content}[/url]`;
                 }

@@ -21,10 +21,10 @@ export default function BBCodeToState (bbcode = '', customTags = {}) {
         h1: BBTag.createSimpleTag('h1'),
         h2: BBTag.createSimpleTag('h1'),
         h3: BBTag.createSimpleTag('h1'),
-        p: BBTag.createSimpleTag('p'),
         quote: BBTag.createSimpleTag('quote'),
         ul: BBTag.createSimpleTag('ul'),
         li: BBTag.createSimpleTag('li'),
+        ol: BBTag.createSimpleTag('ol'),
         img: BBTag.createTag('img', function (tag, content, attr) {
             const caption = attr['img-caption'] ? `<figcaption>${attr['img-caption']}</figcaption>` : '';
             return `<figure><img src="${content}"/>${caption}</figure>`;
